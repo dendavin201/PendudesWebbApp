@@ -1,11 +1,6 @@
-# PendudesWebApp
+# MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
-
-## Develop / Author :
-
-Nama : Davin Ega Naldo <br>
-Nim  : 1900016098
 
 ## Development server
 
