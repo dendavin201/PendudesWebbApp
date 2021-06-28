@@ -9,6 +9,7 @@ import { ProductComponent } from './product/product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FormsModule } from '@angular/forms';
 import { FileUploaderComponent } from './file-uploader/file-uploader.component';
+import { TentangComponent } from './tentang/tentang.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
         component:ProductComponent
       },
       {
+        path:'tentang',
+        component:TentangComponent
+      },
+      {
         path:'image',
         component:ImageComponent
       },
@@ -32,7 +37,7 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [AdminComponent, DashboardComponent, ImageComponent, ProductComponent, ProductDetailComponent, FileUploaderComponent ],
+  declarations: [AdminComponent, DashboardComponent, ImageComponent, ProductComponent, ProductDetailComponent, TentangComponent, FileUploaderComponent ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
