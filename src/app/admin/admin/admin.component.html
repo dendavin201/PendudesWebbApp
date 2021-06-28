@@ -1,19 +1,19 @@
 <ng-container>
     <!--toolbar-->
-    <mat-toolbar color="primary" class="example-header">
+    <mat-toolbar class="example-header" style="background-color: red;">
         <button mat-icon-button (click)="sidenav.toggle()">
             <mat-icon>menu</mat-icon>
         </button>
-        <span>PENDDUDES WEB APP</span>
+        <span style="color: white;">PENDDUDES WEB APP</span>
         <div class="uk-width-expand"></div>
-        <small>Admin</small>
-        <button mat-button (click)="logout()">Logout</button>
+        <small style="color: white;">Admin</small>
+        <button mat-button (click)="logout()" style="color: white;">Logout</button>
     </mat-toolbar>
     <!--end toolbar-->
     
     <mat-sidenav-container class="example-container">
     
-      <mat-sidenav #sidenav mode="side" 
+      <mat-sidenav #sidenav mode="side" style="background-color: black;"
       [position]="'start'" 
       opened class="sidenav-left"
       [fixedInViewport]="true" 
@@ -23,18 +23,18 @@
       
       <mat-nav-list>
         <mat-list-item routerLink="/admin/dashboard">
-            <mat-icon matListIcon>dashboard</mat-icon>
-            <h3 matLine>HOME</h3>
+            <mat-icon matListIcon style="color: white;">dashboard</mat-icon>
+            <h3 matLine style="color: white;">HOME</h3>
         </mat-list-item>
         
         <mat-list-item routerLink="/admin/product">
-            <mat-icon matListIcon>camera_enhance</mat-icon>
-            <h3 matLine>ADD DATA</h3>
+            <mat-icon matListIcon style="color: white;">add</mat-icon>
+            <h3 matLine style="color: white;">ADD DATA</h3>
         </mat-list-item>
 
         <mat-list-item routerLink="/admin/tentang">
-            <mat-icon matListIcon>camera_enhance</mat-icon>
-            <h3 matLine>ABOUT PENDADES <br> WEB APP</h3>
+            <mat-icon matListIcon style="color: white;">account_circle</mat-icon>
+            <h3 matLine style="color: white;">ABOUT PENDUDES <br> WEB APP</h3>
         </mat-list-item>
       
     
